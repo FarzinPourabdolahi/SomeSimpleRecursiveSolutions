@@ -14,9 +14,11 @@ public class Main {
         System.out.println("is Noon a palindorme" + recursiveSolutions.isPalindorme("noon"));
 
         double[] list = {24, 45, 1, 78, 8, 32, 9, 21};
-        recursiveSolutions.selectionSort(list, 0, 7);
+        recursiveSolutions.recursiveSelectionSort(list, 0, 7);
         for(double element : list)
             System.out.println(element);
+
+        System.out.println(recursiveSolutions.recursiveBinarySearch(list, 9, 0, 7));
     }
 
 
